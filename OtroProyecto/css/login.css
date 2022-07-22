@@ -1,0 +1,8 @@
+.bg{
+	background-image: url(img/planta.jpg);
+	background-position: center center;
+}
+
+.bg{
+	background:linear-gradient(#3F7856 , #7EC384,) ;
+}

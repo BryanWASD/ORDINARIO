@@ -1,0 +1,22 @@
+
+.header {
+    color: #f5f9fc;
+    font-size: 27px;
+    padding: 10px;
+    text-align: left;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+.body{
+    background-image: url(https://thumbs.dreamstime.com/b/escaparate-de-podio-para-productos-cosm%C3%A9ticos-naturales-escena-vac%C3%ADa-con-hojas-verdes-sobre-fondo-monocromo-d-representaciones-200727980.jpg);
+}
+.form-control{
+    box-shadow: 7px 13px 37px #000;
+}
+.form-control{
+background-color:whitesmoke;
+}
+.form-control::placeholder { color: rgb(21, 21, 22); }

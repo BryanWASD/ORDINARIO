@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script type="text/javascript" src="js/script.js"></script>
+		<title>Editado de productos</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<link rel="icon" href="img/favicon1.ico" type="image/x-icon">
+
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	</head>
+	<body>
+		<div class="container">
+		<div class="row">
+			<div class="col bg">
+				<h2 class="fw-bold text-center py-5">Editar Producto</h2>
+
+				<!--LOGIN-->
+				<form action="#">
+					<div class="mb-4">
+						<label for="text" class="form-label">Nuevo nombre del producto</label>
+						<input type="text" class="form-control" name="Nombre" id="usuario">
+					</div>
+					<div class="mb-4">
+						<label for="text" class="form-label">Nueva descripcion del producto</label>
+						<input type="text" class="form-control" name="Descripcion" id="usuario">
+					</div>
+					<div class="mb-4">
+						<label for="text" class="form-label">Nuevo Precio del producto</label>
+						<input type="text" class="form-control" name="Precio">
+					</div>
+					<div class="mb-4">
+						<label for="text" class="form-label">Nueva Foto del producto</label><br>
+						<input type="file">
+					</div>
+
+					<div class="d-grid">
+						<a href="admin.html"><button type="submit" class="btn btn-outline-dark" onclick="guardar()">Guardar Cambios</button></a>
+						<br>
+					</div>
+
+				</form>
+			</div>
+			<div class="col">
+				<div class="text-end">
+				</div>
+				<img src="https://bhf-cdn.azureedge.net/bhf-blob-prod/0038289_helios-black-geometric-wallpaper_600.jpeg" height="500" width="600" class="d-flex text-center py-5 my-5" alt="">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<!--
+	<form class="float-right p-5 m-lg-5">
+			<input type="text" class="form-control" placeholder="Nombre" name="nombre" id="usuario"><br>
+			<button type="button" class="btn btn-outline-dark" onclick="funcion()">Ingresar</button>
+		</form>
+		-->
