@@ -1,0 +1,13 @@
+.col-6{
+    float: left;
+    margin-left: 0%;
+    padding-top: 5%;
+}
+.container{
+    float: left;
+    margin: 5%;
+    padding: 0%;
+}
+.body{
+    background-image: url(https://img.freepik.com/premium-vector/tropical-summer-beach-mock-up-background-with-podium-product-display_8087-5298.jpg?w=2000);
+}

@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grafica</title>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+	
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+	<div>
+  <canvas id="myChart"></canvas>
+</div>
+	<!--
+	<canvas id="MiGrafica" height="300" width="400"></canvas>
+-->
+	<form id="form-param">
+		<div class="container">
+		<div>
+			<input type="text" class="parametro"><input type="text" class="valor">
+		</div>
+		<div>
+			<input type="text" class="parametro"><input type="text" class="valor">
+		</div>
+		</div>
+		<div class="buttons">
+			<button class="addparam">Agregar Parametros</button>
+			<button class="showresults">Mostrar resultados</button>
+		</div>
+	</form>
+	<script src="js/graph.js"></script>
+</body>
+<script>
+  const labels = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'My First dataset',
+      backgroundColor:
+      		'rgba(255, 26, 104, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+
+  const config = {
+    type: 'line',
+    data: data,
+    options: {}
+  };
+</script>
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+
+<!--
+<script>
+	let MiCanvas = document.getElementById('MiGrafica').getContext("2d")
+
+var chart = new Chart(MiCanvas,{
+	type:"line",
+	data:{
+		labels:["Crema de coco","Cacahuates","Crema de Manzanilla","Jabon de Coco"],
+		datasets:[
+		{
+			label:"Mas Vendidos",
+			backgroundColor:"rgb(0,0,0)",
+			data:[12,39,5,30]
+		}
+
+		]
+	}
+})
+</script>
+-->
+</html>
